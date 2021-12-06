@@ -1,0 +1,11 @@
+th {
+  @apply p-2;
+}
+
+tbody td {
+  @apply border border-cyan-800 px-4;
+}
+
+tbody tr:nth-child(even) {
+  @apply bg-gray-50;
+}

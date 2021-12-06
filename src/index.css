@@ -1,0 +1,26 @@
+body {
+  @apply bg-gray-100 text-gray-700 antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+a {
+  @apply text-gray-700 no-underline;
+}
+
+h2 {
+  @apply font-bold text-xl;
+}
+
+.btn {
+  @apply rounded font-semibold shadow-md py-1 px-4 focus:outline-none focus:border-cyan-500 focus:ring-cyan-500 focus:ring-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-page {
+  @apply w-24 bg-white border hover:bg-teal-900 hover:text-white;
+}
+
+.btn-load {
+  @apply w-32 bg-white border hover:bg-teal-900 hover:text-white;
+}

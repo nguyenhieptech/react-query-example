@@ -1,0 +1,20 @@
+# GET users request
+GET http://localhost:3004/users/
+
+###
+
+# GET sorted users request
+GET http://localhost:3004/users?_sort=id&_order=desc
+
+###
+
+# GET paginated users request
+GET http://localhost:3004/users?_page=5&_limit=10
+
+###
+
+
+# DELETE request
+GET http://localhost:3004/users/9
+
+###
