@@ -1,4 +1,4 @@
-# React Query
+# React Query Example
 
 This project is a demonstration of how to use [React Query](https://react-query.tanstack.com) library to perform the following tasks:
 
@@ -52,4 +52,4 @@ Head over to your browser and open the URL <http://localhost:3000> to access the
 ## Reference
 
 - https://www.sitepoint.com/react-query-fetch-manage-data/
-- By [Michael Wanyoike]('https://twitter.com/myxsys')
+- By [Michael Wanyoike](https://twitter.com/myxsys)
