@@ -1,36 +1,23 @@
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useState, useContext } from 'react';
-import { useMutation, useQueryClient } from 'react-query';
-
-import { api } from '../views/User/hooks/api';
 import { useDeleteUser } from './useDeleteUser';
-import { AppContext } from '../providers/AppContextProvider';
+import { AppContext } from 'src/providers/AppContextProvider';
 import FlashAlert from './FlashAlert';
 import DeleteModal from './DeleteModal';
-import EditIcon from '../icons/edit';
-import DeleteIcon from '../icons/delete';
+import EditIcon from 'src/icons/edit';
+import DeleteIcon from 'src/icons/delete';
 import './table.css';
 
 function UserTable({ users }: any) {
   const { flashMessage, setFlashMessage } = useContext(AppContext);
-  const queryClient = useQueryClient();
 
   // Delete Modal Show State
   const [deleteId, setDeleteId] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
-  const deleteMutation = useMutation((id) => axios.delete(`${api}/${id}`), {
-    onSuccess: () => {
-      queryClient.invalidateQueries(['users']);
-      setFlashMessage('Delete Successful!');
-      hideModal();
-    },
-  });
-
   const hideModal = () => setShowModal(false);
 
-  const deleteUser = useDeleteUser({ setFlashMessage, hideModal });
+  const deleteMutation = useDeleteUser({ setFlashMessage, hideModal });
 
   const showDeleteModal = (id: number) => {
     setDeleteId(id);

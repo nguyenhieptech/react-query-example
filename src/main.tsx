@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import { ReactRouterProvider } from './providers/ReactRouterProvider';
 import { ReactQueryProvider } from './providers/ReactQueryProvider';
 import { AppContextProvider } from './providers/AppContextProvider';

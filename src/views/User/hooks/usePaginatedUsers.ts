@@ -1,14 +1,15 @@
 import { useQuery } from 'react-query';
 import axios from 'axios';
-import { api } from './api';
-import { userKeys } from './queryKeys';
+import { api } from './utils/api';
+import { userKeys } from './utils/queryKeys';
 
-export interface PaginationParams {
+export function usePaginatedUsers({
+  page,
+  pageLimit,
+}: {
   page: number;
   pageLimit: number;
-}
-
-export function usePaginatedUsers({ page, pageLimit }: PaginationParams) {
+}) {
   const fetchUsers = async (p = page): Promise<any> => {
     const response = await axios.get(`${api}?_page=${p}&_limit=${pageLimit}`);
     return response.data;

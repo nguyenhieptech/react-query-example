@@ -1,6 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
 import Modal from 'react-modal';
-
 import Navbar from './layout/Navbar';
 import Users from './views/User/Users';
 import InfiniteQuery from './views/User/InfiniteQuery';

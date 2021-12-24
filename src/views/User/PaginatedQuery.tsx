@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import UserTable from '../../components/UserTable';
+import UserTable from 'src/components/UserTable';
 import { usePaginatedUsers } from './hooks/usePaginatedUsers';
 
 function PaginatedQuery() {

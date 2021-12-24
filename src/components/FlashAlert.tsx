@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import CloseIcon from '../icons/close';
-import { AppContext } from '../providers/AppContextProvider';
+import CloseIcon from 'src/icons/close';
+import { AppContext } from 'src/providers/AppContextProvider';
 
 function FlashAlert({ message }: any) {
-  const { flashMessage, setFlashMessage } = useContext(AppContext);
+  const { setFlashMessage } = useContext(AppContext);
 
   return (
     <div className="flex justify-between items-center px-2 text-lime-800 bg-lime-100 rounded border border-lime-800">

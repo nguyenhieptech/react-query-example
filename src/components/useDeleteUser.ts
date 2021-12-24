@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useMutation, useQueryClient } from 'react-query';
-import { api } from '../views/User/hooks/api';
+import { api } from 'src/views/User/hooks/utils/api';
 
 export interface Props {
   setFlashMessage: any;

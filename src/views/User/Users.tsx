@@ -1,4 +1,4 @@
-import UserTable from '../../components/UserTable';
+import UserTable from 'src/components/UserTable';
 import { useGetUsers } from './hooks/useGetUsers';
 
 function Users() {
@@ -9,6 +9,8 @@ function Users() {
       <h2 className="mb-4">Basic Query Example</h2>
       <div>
         {getUsers.isLoading && <div>Loading...</div>}
+
+        {getUsers.isFetching && <div>Fetching...</div>}
 
         {getUsers.error instanceof Error && <div>{getUsers.error.message}</div>}
 

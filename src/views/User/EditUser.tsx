@@ -1,5 +1,5 @@
 import { Redirect } from 'react-router-dom';
-import UserForm from '../../components/UserForm';
+import UserForm from 'src/components/UserForm';
 import { useEditUser, useGetUser } from './hooks/useEditUser';
 
 function EditUser() {

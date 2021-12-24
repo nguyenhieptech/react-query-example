@@ -1,13 +1,9 @@
 import { useInfiniteQuery } from 'react-query';
 import axios from 'axios';
-import { api } from './api';
-import { userKeys } from './queryKeys';
+import { api } from './utils/api';
+import { userKeys } from './utils/queryKeys';
 
-export interface Params {
-  pageLimit: number;
-}
-
-export function useLoadMoreUsers({ pageLimit }: Params) {
+export function useLoadMoreUsers({ pageLimit }: { pageLimit: number }) {
   const fetchUsers = async ({ pageParam = 1 }) => {
     return await axios.get(`${api}?_page=${pageParam}&_limit=${pageLimit}`);
   };

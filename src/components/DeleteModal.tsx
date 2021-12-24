@@ -1,5 +1,5 @@
 import Modal from 'react-modal';
-import ExclamationIcon from '../icons/exclamation';
+import ExclamationIcon from 'src/icons/exclamation';
 
 const customStyles = {
   content: {

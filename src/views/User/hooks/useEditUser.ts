@@ -1,9 +1,8 @@
 import axios from 'axios';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
 import { useParams } from 'react-router-dom';
-
-import { api } from './api';
-import { userKeys } from './queryKeys';
+import { api } from './utils/api';
+import { userKeys } from './utils/queryKeys';
 
 export function useGetUser() {
   // https://reactrouter.com/web/api/Hooks/useparams
