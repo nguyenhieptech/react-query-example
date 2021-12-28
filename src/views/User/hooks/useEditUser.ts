@@ -1,20 +1,20 @@
 import axios from 'axios';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
 import { useParams } from 'react-router-dom';
-import { api } from './utils/api';
-import { userKeys } from './utils/queryKeys';
+import { api } from 'src/api/api';
+import { userKeys } from './queryKeys';
 
 export function useGetUser() {
   // https://reactrouter.com/web/api/Hooks/useparams
   const { id }: any = useParams();
 
   // https://react-query.tanstack.com/guides/query-functions#query-function-variables
-  const fetchUser = async () => {
+  const getUser = async () => {
     const response = await axios.get(`${api}/${id}`);
     return response.data;
   };
 
-  const user = useQuery(userKeys.detail(id), fetchUser, {
+  const user = useQuery(userKeys.detail(id), getUser, {
     retry: 1,
   });
 

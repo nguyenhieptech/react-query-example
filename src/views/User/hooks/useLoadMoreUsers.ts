@@ -1,10 +1,10 @@
 import { useInfiniteQuery } from 'react-query';
 import axios from 'axios';
-import { api } from './utils/api';
-import { userKeys } from './utils/queryKeys';
+import { api } from 'src/api/api';
+import { userKeys } from './queryKeys';
 
 export function useLoadMoreUsers({ pageLimit }: { pageLimit: number }) {
-  const fetchUsers = async ({ pageParam = 1 }) => {
+  const getUsers = async ({ pageParam = 1 }) => {
     return await axios.get(`${api}?_page=${pageParam}&_limit=${pageLimit}`);
   };
 
@@ -21,7 +21,7 @@ export function useLoadMoreUsers({ pageLimit }: { pageLimit: number }) {
   };
 
   // https://react-query.tanstack.com/guides/infinite-queries
-  const infiniteUsers = useInfiniteQuery(userKeys.infinite(), fetchUsers, {
+  const infiniteUsers = useInfiniteQuery(userKeys.infinite(), getUsers, {
     getNextPageParam: (lastPage) => {
       // The following code block is specific to json-server api
       const nextPageUrl = parseLinkHeader(lastPage.headers.link)['next'];

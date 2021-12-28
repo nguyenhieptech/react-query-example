@@ -1,15 +1,15 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
-import { api } from './utils/api';
-import { userKeys } from './utils/queryKeys';
+import { api } from 'src/api/api';
+import { userKeys } from './queryKeys';
 
 export function useGetUsers() {
-  const fetchUsers = async () => {
+  const getUsers = async () => {
     const response = await axios.get(api);
     return response.data;
   };
 
-  const usersInfo = useQuery(userKeys.all, fetchUsers, {
+  const usersInfo = useQuery(userKeys.all, getUsers, {
     retry: 1,
   });
 

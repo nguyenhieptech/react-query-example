@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useContext } from 'react';
 import { useQueryClient, useMutation } from 'react-query';
-import { api } from './utils/api';
-import { userKeys } from './utils/queryKeys';
+import { api } from 'src/api/api';
+import { userKeys } from './queryKeys';
 import { AppContext } from 'src/providers/AppContextProvider';
 
 export function useCreateUser() {
@@ -24,7 +24,7 @@ export function useCreateUser() {
         ...oldData,
         newUser,
       ]);
-      return { previousUsers: previousUsers };
+      return { previousUsers };
     },
     onSuccess: (data) => {
       setFlashMessage(

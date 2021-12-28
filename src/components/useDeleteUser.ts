@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useMutation, useQueryClient } from 'react-query';
-import { api } from 'src/views/User/hooks/utils/api';
+import { api } from 'src/api/api';
 
 export interface Props {
   setFlashMessage: any;
@@ -9,6 +9,11 @@ export interface Props {
 
 export function useDeleteUser({ setFlashMessage, hideModal }: Props) {
   const queryClient = useQueryClient();
+
+  const deleteUser = async (id: any) => {
+    const response = await axios.delete(`${api}/${id}`);
+    return response.data;
+  };
 
   const mutation = useMutation((id) => axios.delete(`${api}/${id}`), {
     onSuccess: () => {
