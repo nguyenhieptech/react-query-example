@@ -65,7 +65,7 @@ Head over to your browser and open the URL <http://localhost:3000> to access the
 
 https://www.youtube.com/watch?v=aLQbVd-2tIo
 
-- It uses custom hooks for better structure, so that if you want to change implementation details, it doesn't affect code inside components. These two articles below is really **IMPORTANT**, please read them carefully.
+- It uses custom hooks for better structure, so that if you want to change implementation details, it doesn't affect code inside components. These two articles below are really **IMPORTANT**, please read them carefully.
 
 https://kyleshevlin.com/use-encapsulation
 
