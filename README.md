@@ -1,5 +1,9 @@
 # React Query Example
 
+## Preview
+
+![Site Preview](./src/preview.PNG)
+
 This project is a demonstration of how to use [React Query](https://react-query.tanstack.com) library to perform the following tasks:
 
 - CRUD Operations (using useQuery, useMutation)
