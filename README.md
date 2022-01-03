@@ -68,12 +68,15 @@ https://www.youtube.com/watch?v=aLQbVd-2tIo
 - It uses custom hooks for better structure, so that if you want to change implementation details, it doesn't affect code inside components. These two articles below is really **IMPORTANT**, please read them carefully.
 
 https://kyleshevlin.com/use-encapsulation
+
 https://log.seruco.io/hide-usequery/
 
 - It includes Optimistic Updates. What is Optimistic Updates?
 
 https://react-query.tanstack.com/guides/optimistic-updates
+
 https://stackoverflow.com/questions/33009657/what-is-optimistic-updates-in-front-end-development
+
 https://resthooks.io/docs/guides/optimistic-updates
 
 - How to setup Vite projects with WindiCSS:
