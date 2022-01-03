@@ -1,9 +1,10 @@
-const forms = require('windicss/plugin/forms');
+import { defineConfig } from 'windicss/helpers';
+import formsPlugin from 'windicss/plugin/forms';
 
-module.exports = {
-  darkMode: 'class', // or 'media' or 'class' or false
-  plugins: [forms],
+export default defineConfig({
+  darkMode: 'class',
+  plugins: [formsPlugin],
   theme: {
     extend: {},
   },
-};
+});
