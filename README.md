@@ -12,12 +12,12 @@ This project is a demonstration of how to use [React Query](https://react-query.
 
 This project is setup with:
 
-- [Vite](https://vitejs.dev/): A very fast build tool
+- [Vite](https://vitejs.dev/): "Next Generation Frontend Tooling". It's faster than [create-react-app](https://create-react-app.dev/). Consider using Vite for all your personal projects. It's worth it.
 - [WindiCSS](https://windicss.org/guide/): "An **on-demand** alternative to Tailwind, which provides faster load times, **full compatibility with Tailwind v2.0**, and a bunch of additional cool features."
-- [React Hook Form](https://react-hook-form.com/): Form builder and validation library
-- [React Modal](http://reactcommunity.org/react-modal/): An accessible modal component
-- [Axios](https://github.com/axios/axios): Promised based HTTP client for browsers
-- [JSON Server](https://github.com/typicode/json-server): Full fake REST API server
+- [React Hook Form](https://react-hook-form.com/): Performant, flexible and extensible forms with easy-to-use validation.
+- [React Modal](http://reactcommunity.org/react-modal/): Accessible modal dialog component for React.
+- [Axios](https://github.com/axios/axios): Promise based HTTP client for the browser and Node.js.
+- [JSON Server](https://github.com/typicode/json-server): Full fake REST API server with zero coding in less than 30 seconds.
 
 ## Run Locally
 
@@ -85,5 +85,5 @@ https://windicss.org/integrations/vite.html
 
 ## Reference
 
-- https://www.sitepoint.com/react-query-fetch-manage-data/ by [Michael Wanyoike](https://twitter.com/myxsys)
+- https://www.sitepoint.com/react-query-fetch-manage-data by [Michael Wanyoike](https://twitter.com/myxsys)
 - https://react-query.tanstack.com/overview
