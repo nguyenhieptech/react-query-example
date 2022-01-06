@@ -4,6 +4,9 @@
 
 ![Site Preview](./src/preview.PNG)
 
+**NOTE: There's a README file in Vietnamese.**
+https://github.com/nguyenhieptech/react-query-example/blob/main/README-vi.md
+
 This project is a demonstration of how to use [React Query](https://react-query.tanstack.com) library to perform the following tasks:
 
 - CRUD Operations (using useQuery, useMutation).
@@ -64,6 +67,8 @@ Head over to your browser and open the URL <http://localhost:3000> to access the
 - Why React Query is the way to go?
 
 https://www.youtube.com/watch?v=aLQbVd-2tIo
+
+https://www.youtube.com/watch?v=seU46c6Jz7E
 
 - It uses custom hooks for better structure, so that if you want to change implementation details, it doesn't affect code inside components. These two articles below are really **IMPORTANT**, please read them carefully.
 
