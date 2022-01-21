@@ -1,3 +1,9 @@
+# This example using React Router v5. For v6 and future refractor, follow and star this repo below instead:
+
+https://github.com/nguyenhieptech/react-query-ts
+
+---
+
 # React Query Example
 
 ## Preview
