@@ -1,11 +1,10 @@
-import { HelloWorld } from '@/components/hello-world';
+import { AppProvider } from './providers/app-provider';
 
 function App() {
   return (
-    <div className="flex">
-      Hello brand new React Query Example project
-      <HelloWorld />
-    </div>
+    <main className="container p-4 mx-auto mt-8 lg:w-screen-lg">
+      <AppProvider />
+    </main>
   );
 }
 

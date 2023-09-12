@@ -4,10 +4,9 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
 
-  @apply font-normal text-base antialiased bg-gray-800 text-gray-100;
+  @apply font-normal text-base antialiased bg-gray-100;
 }
