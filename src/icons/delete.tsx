@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-function AiOutlineDelete(props: any) {
+export function AiOutlineDelete(props: any) {
   return (
     <svg
       stroke="currentColor"
@@ -15,5 +13,3 @@ function AiOutlineDelete(props: any) {
     </svg>
   );
 }
-
-export default AiOutlineDelete;

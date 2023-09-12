@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-function AiOutlineEdit(props: any) {
+export function AiOutlineEdit(props: any) {
   return (
     <svg
       stroke="currentColor"
@@ -15,5 +13,3 @@ function AiOutlineEdit(props: any) {
     </svg>
   );
 }
-
-export default AiOutlineEdit;

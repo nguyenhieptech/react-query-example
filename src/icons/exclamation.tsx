@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-function BsExclamationTriangle(props: any) {
+export function BsExclamationTriangle(props: any) {
   return (
     <svg
       stroke="currentColor"
@@ -20,5 +18,3 @@ function BsExclamationTriangle(props: any) {
     </svg>
   );
 }
-
-export default BsExclamationTriangle;

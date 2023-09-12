@@ -1,21 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { ReactRouterProvider } from './providers/ReactRouterProvider';
-import { ReactQueryProvider } from './providers/ReactQueryProvider';
-import { AppContextProvider } from './providers/AppContextProvider';
-import App from './App';
-import 'virtual:windi.css';
+import ReactDOM from 'react-dom/client';
+import App from './app.tsx';
 import './index.css';
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ReactRouterProvider>
-      <ReactQueryProvider>
-        <AppContextProvider>
-          <App />
-        </AppContextProvider>
-      </ReactQueryProvider>
-    </ReactRouterProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App />
+  </React.StrictMode>
 );

@@ -1,0 +1,28 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.lineHeight": 21,
+  "editor.tabSize": 2,
+  "tailwindCSS.suggestions": true,
+  "tailwindCSS.classAttributes": [
+    // Default
+    "class",
+    "className",
+
+    // Additional Tailwind CSS Intellisense for Transition API from Headless UI
+    // https://headlessui.com/react/transition#component-api
+    "enter",
+    "enterFrom",
+    "enterTo",
+    "entered",
+    "leave",
+    "leaveFrom",
+    "leaveTo"
+  ],
+  // https://cva.style/docs/getting-started/installation#intellisense
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}

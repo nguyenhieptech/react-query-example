@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-function AiOutlineCloseCircle(props: any) {
+export function AiOutlineCloseCircle(props: any) {
   return (
     <svg
       stroke="currentColor"
@@ -16,5 +14,3 @@ function AiOutlineCloseCircle(props: any) {
     </svg>
   );
 }
-
-export default AiOutlineCloseCircle;

@@ -1,7 +1,0 @@
-nav a {
-  @apply mr-4 font-semibold text-lg text-gray-700 no-underline pb-2 w-24 block text-center;
-}
-
-.active {
-  @apply text-green-800 font-bold border-b-2 border-green-800;
-}
