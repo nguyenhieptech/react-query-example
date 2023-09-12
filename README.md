@@ -1,27 +1,72 @@
-# React + TypeScript + Vite
+# Tanstack Query Example (aka React Query)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Preview
 
-Currently, two official plugins are available:
+![Site Preview](./src/preview.PNG)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+_Note: old image from README 2022_
 
-## Expanding the ESLint configuration
+This project is a demonstration of how to use [Tanstack Query](https://tanstack.com/query/latest/docs/react/overview) and [Axios](https://github.com/axios/axios) to perform the following tasks:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- CRUD Operations (`useQuery`, `useMutation`).
+- Pagination (`useQuery`)
+- Load-more like feature (`useInfiniteQuery`)
 
-- Configure the top-level `parserOptions` property like this:
+## Run Locally
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- Clone the project
+
+```bash
+git clone https://github.com/nguyenhieptech/react-query-example
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Go to the project directory:
+
+```bash
+cd react-query-example
+# or cd react-query-example-main
+```
+
+- Install dependencies
+
+```bash
+yarn install
+```
+
+- Setup database file
+
+```bash
+cp db/sample.db.json db/db.json
+```
+
+- Start the `json-server`
+
+```bash
+yarn json-server
+```
+
+- Launch another terminal and start the `Vite` server
+
+```bash
+yarn dev
+```
+
+Head over to your browser and open the URL <http://localhost:5555> to access the application. You can change the port in `vite.config.ts`
+
+## Reference
+
+https://youtu.be/seU46c6Jz7E?si=JrfOKqLaY2udPQ1V
+
+https://youtu.be/r8Dg0KVnfMA?si=f2-B6c96MoVVGWto
+
+https://kyleshevlin.com/use-encapsulation
+
+https://log.seruco.io/hide-usequery/
+
+https://stackoverflow.com/q/33009657/18459116
+
+https://resthooks.io/rest/guides/optimistic-updates
+
+https://www.sitepoint.com/react-query-fetch-manage-data
+
+https://tanstack.com/query/latest/docs/react/overview
