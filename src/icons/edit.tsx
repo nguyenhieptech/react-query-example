@@ -1,4 +1,6 @@
-export function AiOutlineEdit(props: any) {
+import { ComponentPropsWithoutRef } from 'react';
+
+export function AiOutlineEdit(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       stroke="currentColor"

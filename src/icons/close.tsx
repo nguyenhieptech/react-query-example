@@ -1,4 +1,6 @@
-export function AiOutlineCloseCircle(props: any) {
+import { ComponentPropsWithoutRef } from 'react';
+
+export function AiOutlineCloseCircle(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       stroke="currentColor"
