@@ -1,4 +1,6 @@
-export function AiOutlineDelete(props: any) {
+import { ComponentPropsWithoutRef } from 'react';
+
+export function AiOutlineDelete(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       stroke="currentColor"

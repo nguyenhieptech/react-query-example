@@ -1,4 +1,6 @@
-export function BsExclamationTriangle(props: any) {
+import { ComponentPropsWithoutRef } from 'react';
+
+export function BsExclamationTriangle(props: ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       stroke="currentColor"
