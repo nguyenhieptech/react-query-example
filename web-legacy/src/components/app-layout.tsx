@@ -6,7 +6,7 @@ export function AppLayout() {
       <header>
         <nav className="lg:w-screen-lg container mx-auto flex justify-between p-4">
           <Link className="w-full" to="/">
-            <img src="/logo.svg" alt="React Query" width="200" />
+            Tanstack Query Example
           </Link>
           <div className="flex space-x-4">
             <NavLink

@@ -17,7 +17,7 @@ export function CreateUser() {
     <div>
       <h2>New User</h2>
 
-      {createUser.isLoading && <div>Loading...</div>}
+      {createUser.isPending && <div>Loading...</div>}
 
       {createUser.error instanceof Error && (
         <div>An error occurred: {createUser.error.message}</div>
